@@ -1,0 +1,3 @@
+verilog work "lab02_reg.v"
+verilog work "lab02_alu.v"
+verilog work "lab02_ctrl.v"

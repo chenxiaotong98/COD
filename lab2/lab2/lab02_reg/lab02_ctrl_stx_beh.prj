@@ -1,0 +1,4 @@
+verilog isim_temp "lab02_reg.v"
+verilog isim_temp "lab02_alu.v"
+verilog isim_temp "lab02_ctrl.v"
+verilog isim_temp "e:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v"

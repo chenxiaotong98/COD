@@ -1,0 +1,131 @@
+module ctrl(
+	input clk,
+	input rst_n,
+	output [31:0] a,
+	output [31:0] b,
+	output [31:0] sum
+    );
+	reg [4:0] ad0;
+	reg [4:0] ad1;
+	reg [4:0] ad2;
+	reg [5:0] ram_addra;
+	reg ram_wea;
+	alu alu1(
+	.alu_a	(a),
+   .alu_b	(b),
+   .alu_op	(5'b1),
+   .alu_out	(sum)
+	);
+	regfile reg1(
+	.clk	(clk),
+	.rst_n	(rst_n),
+	.r1_addr	(ad0),
+	.r2_addr	(ad1),
+	.r3_addr	(ad2),
+	.r3_din	(sum),
+	.r3_wr	(1'b1),
+	.r1_dout	(a),
+	.r2_dout	(b)
+	);
+	ram ram1(
+	.clka		(clk),
+	.wea		(ram_wea),
+	.addra	(ram_addra),
+	.dina		(sum)
+	//.clkb		(clk),
+	//.rstb		(rst_n),
+	//.addrb	(ram_addrb),
+	//.doutb	(ram_dout)
+	);
+always@(posedge clk or negedge rst_n)
+	if(~rst_n)
+	begin
+		ram_addra<=6'b0;
+		ram_wea<=0;
+	end
+	else
+	begin
+		ram_addra<=ram_addra+6'b1;
+		ram_wea<=1;
+	end
+
+always@(posedge clk or negedge rst_n)
+		if(~rst_n)
+		begin
+			ad0<=5'h0;
+			ad1<=5'h1;
+			ad2<=5'h2;
+		end
+		else
+		begin
+			ad0<=ad0+5'b1;
+			ad1<=ad1+5'b1;
+			ad2<=ad2+5'b1;
+		end
+	
+endmodule
+
+module alu(
+  input  signed	[31:0] alu_a,
+  input  signed	[31:0] alu_b,
+  input	         [4:0]	 alu_op,
+  output  reg     [31:0] alu_out
+);
+	parameter	A_NOP = 5'h00; //空运算
+	parameter	A_ADD	= 5'h01;	//符号加
+	parameter	A_SUB	= 5'h02;	//符号减
+	parameter	A_AND = 5'h03;	//与
+	parameter	A_OR  = 5'h04;	//或
+	parameter	A_XOR = 5'h05;	//异或
+	parameter	A_NOR = 5'h06;	//或非
+	reg sign;
+	always@(*)
+	begin
+		case(alu_op)
+			A_ADD:{sign,alu_out}<=alu_a+alu_b;
+			A_SUB:{sign,alu_out}<=alu_a-alu_b;
+			A_AND:alu_out<=alu_a&alu_b;
+			A_OR:alu_out<=alu_a|alu_b;
+			A_XOR:alu_out<=alu_a^alu_b;
+			A_NOR:alu_out<=~(alu_a|alu_b);
+			A_NOP:alu_out<=alu_out;
+			default:alu_out<=alu_out;
+		endcase
+		
+	end
+	
+endmodule
+
+module regfile(
+	input	clk,
+	input	rst_n,
+	input	[4:0]	r1_addr,
+	input	[4:0]	r2_addr,
+	input	[4:0]	r3_addr,
+	input	[31:0] r3_din,
+	input	r3_wr,
+	output reg [31:0]	r1_dout,
+	output reg [31:0]	r2_dout
+    );
+	reg [31:0] regfile [31:0];
+	integer i;
+always@(posedge clk or negedge rst_n)
+	begin
+		if(~rst_n)
+		begin
+			regfile[0]<=32'b1;
+			regfile[1]<=32'b1;
+			for(i=2;i<32;i=i+1)
+				regfile[i]<=32'b0;
+		end
+		else
+			if(r3_wr)			
+				regfile[r3_addr]<=r3_din;	
+	end
+
+always@(negedge clk)
+	begin
+		r1_dout<=regfile[r1_addr];
+		r2_dout<=regfile[r2_addr];
+	end
+endmodule

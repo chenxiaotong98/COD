@@ -1,0 +1,31 @@
+Running: F:\Xilinx_ISE\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o Y:/lab4/lab4/test_isim_beh.exe -prj Y:/lab4/lab4/test_beh.prj work.test work.glbl 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file \"Y:/lab4/lab4/ipcore_dir/ram.v\" into library work
+Analyzing Verilog file \"Y:/lab4/lab4/regfile.v\" into library work
+Analyzing Verilog file \"Y:/lab4/lab4/alu.v\" into library work
+Analyzing Verilog file \"Y:/lab4/lab4/ctrl.v\" into library work
+Analyzing Verilog file \"Y:/lab4/lab4/test.v\" into library work
+Analyzing Verilog file \"F:/Xilinx_ISE/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 71348 KB
+Fuse CPU Usage: 160 ms
+Compiling module alu
+Compiling module regfile
+Compiling module BLK_MEM_GEN_V4_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_3(C_FAMILY="spart...
+Compiling module ram
+Compiling module ctrl
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 11 Verilog Units
+Built simulation executable Y:/lab4/lab4/test_isim_beh.exe
+Fuse Memory Usage: 77560 KB
+Fuse CPU Usage: 210 ms

@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 lab02_ctrl.ngc lab02_ctrl.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab02_ctrl_map.ncd lab02_ctrl.ngd lab02_ctrl.pcf 
+par -w -intstyle ise -ol high -mt off lab02_ctrl_map.ncd lab02_ctrl.ncd lab02_ctrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab02_ctrl.twx lab02_ctrl.ncd -o lab02_ctrl.twr lab02_ctrl.pcf 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 lab02_ctrl.ngc lab02_ctrl.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab02_ctrl_map.ncd lab02_ctrl.ngd lab02_ctrl.pcf 
+par -w -intstyle ise -ol high -mt off lab02_ctrl_map.ncd lab02_ctrl.ncd lab02_ctrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab02_ctrl.twx lab02_ctrl.ncd -o lab02_ctrl.twr lab02_ctrl.pcf 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 lab02_ctrl.ngc lab02_ctrl.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab02_ctrl_map.ncd lab02_ctrl.ngd lab02_ctrl.pcf 
+par -w -intstyle ise -ol high -mt off lab02_ctrl_map.ncd lab02_ctrl.ncd lab02_ctrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab02_ctrl.twx lab02_ctrl.ncd -o lab02_ctrl.twr lab02_ctrl.pcf 
+xst -intstyle ise -ifn "Z:/lab2/lab02_reg/lab02_ctrl.xst" -ofn "Z:/lab2/lab02_reg/lab02_ctrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx16-csg324-3 lab02_ctrl.ngc lab02_ctrl.ngd  
+map -intstyle ise -p xa6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o lab02_ctrl_map.ncd lab02_ctrl.ngd lab02_ctrl.pcf 
+par -w -intstyle ise -ol high -mt off lab02_ctrl_map.ncd lab02_ctrl.ncd lab02_ctrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab02_ctrl.twx lab02_ctrl.ncd -o lab02_ctrl.twr lab02_ctrl.pcf 

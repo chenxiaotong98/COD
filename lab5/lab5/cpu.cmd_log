@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 
+xst -intstyle ise -ifn "E:/lab5/cpu.xst" -ofn "E:/lab5/cpu.syr" 

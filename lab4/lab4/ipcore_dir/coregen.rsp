@@ -1,0 +1,2 @@
+SETPROJECT "Y:/lab4/lab4/ipcore_dir/coregen.cgp"
+LAUNCHXCO "Y:/lab4/lab4/ipcore_dir/ram.xco"

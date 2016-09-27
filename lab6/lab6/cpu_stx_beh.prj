@@ -1,0 +1,8 @@
+verilog isim_temp "ipcore_dir/Memory.v"
+verilog isim_temp "SignExtend26.v"
+verilog isim_temp "SignExtend.v"
+verilog isim_temp "Registers.v"
+verilog isim_temp "ControlUnit.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "cpu.v"
+verilog isim_temp "F:/Xilinx_ISE/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,644 @@
+--------------------------------------------------------------------------------
+Release 12.3 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+e:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf
+
+Design file:              alu.ncd
+Physical constraint file: alu.pcf
+Device,package,speed:     xa6slx16,csg324,I,-3 (PREVIEW 1.12c 2010-09-15)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock alu_op<0>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+alu_a<0>    |    4.402(F)|      SLOW  |   -0.565(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<1>    |    5.054(F)|      SLOW  |   -0.630(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<2>    |    4.345(F)|      SLOW  |   -0.432(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<3>    |    4.389(F)|      SLOW  |    0.295(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<4>    |    4.623(F)|      SLOW  |   -0.812(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<5>    |    4.905(F)|      SLOW  |   -0.535(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<6>    |    3.285(F)|      SLOW  |    0.449(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<7>    |    3.440(F)|      SLOW  |    0.226(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<8>    |    3.009(F)|      SLOW  |    0.586(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<9>    |    3.743(F)|      SLOW  |    0.098(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<10>   |    2.822(F)|      SLOW  |    0.842(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<11>   |    2.579(F)|      SLOW  |    1.181(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<12>   |    2.933(F)|      SLOW  |    0.693(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<13>   |    2.814(F)|      SLOW  |    0.958(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<14>   |    2.697(F)|      SLOW  |    1.613(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<15>   |    2.553(F)|      SLOW  |    0.902(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<16>   |    2.323(F)|      SLOW  |    1.209(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<17>   |    2.134(F)|      SLOW  |    2.019(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<18>   |    2.300(F)|      SLOW  |    1.123(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<19>   |    1.997(F)|      SLOW  |    1.645(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<20>   |    3.011(F)|      SLOW  |    0.998(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<21>   |    2.084(F)|      SLOW  |    1.435(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<22>   |    2.085(F)|      SLOW  |    1.004(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<23>   |    2.462(F)|      SLOW  |    1.145(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<24>   |    2.257(F)|      SLOW  |    0.660(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<25>   |    2.431(F)|      SLOW  |    0.685(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<26>   |    1.989(F)|      SLOW  |    1.064(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<27>   |    1.358(F)|      SLOW  |    1.357(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<28>   |    1.031(F)|      SLOW  |    1.975(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<29>   |    1.842(F)|      SLOW  |    0.933(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<30>   |    1.562(F)|      SLOW  |    1.125(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<31>   |    1.316(F)|      SLOW  |    1.362(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<0>    |    4.113(F)|      SLOW  |   -0.227(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<1>    |    3.066(F)|      SLOW  |    0.708(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<2>    |    4.244(F)|      SLOW  |   -0.008(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<3>    |    3.881(F)|      SLOW  |    0.123(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<4>    |    3.891(F)|      SLOW  |   -0.052(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<5>    |    4.157(F)|      SLOW  |   -0.127(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<6>    |    3.915(F)|      SLOW  |    0.069(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<7>    |    2.380(F)|      SLOW  |    1.140(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<8>    |    3.507(F)|      SLOW  |    0.444(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<9>    |    3.247(F)|      SLOW  |    0.759(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<10>   |    3.066(F)|      SLOW  |    0.554(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<11>   |    2.711(F)|      SLOW  |    0.929(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<12>   |    3.177(F)|      SLOW  |    0.984(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<13>   |    3.047(F)|      SLOW  |    0.705(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<14>   |    3.263(F)|      SLOW  |    0.982(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<15>   |    2.741(F)|      SLOW  |    0.937(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<16>   |    4.065(F)|      SLOW  |    0.334(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<17>   |    2.733(F)|      SLOW  |    1.294(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<18>   |    3.092(F)|      SLOW  |    0.817(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<19>   |    2.535(F)|      SLOW  |    1.323(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<20>   |    3.830(F)|      SLOW  |   -0.034(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<21>   |    2.926(F)|      SLOW  |    0.715(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<22>   |    2.976(F)|      SLOW  |    0.226(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<23>   |    2.276(F)|      SLOW  |    1.209(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<24>   |    3.750(F)|      SLOW  |   -0.164(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<25>   |    2.807(F)|      SLOW  |    0.491(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<26>   |    2.938(F)|      SLOW  |    0.179(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<27>   |    2.432(F)|      SLOW  |    0.299(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<28>   |    2.410(F)|      SLOW  |    1.146(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<29>   |    2.321(F)|      SLOW  |    0.371(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<30>   |    2.216(F)|      SLOW  |    0.472(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<31>   |    1.914(F)|      SLOW  |    0.472(F)|      SLOW  |_n0086_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock alu_op<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+alu_a<0>    |    4.183(F)|      SLOW  |   -0.333(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<1>    |    4.835(F)|      SLOW  |   -0.398(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<2>    |    4.126(F)|      SLOW  |   -0.200(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<3>    |    4.170(F)|      SLOW  |    0.527(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<4>    |    4.404(F)|      SLOW  |   -0.580(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<5>    |    4.686(F)|      SLOW  |   -0.303(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<6>    |    3.066(F)|      SLOW  |    0.681(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<7>    |    3.221(F)|      SLOW  |    0.458(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<8>    |    2.790(F)|      SLOW  |    0.818(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<9>    |    3.524(F)|      SLOW  |    0.330(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<10>   |    2.603(F)|      SLOW  |    1.074(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<11>   |    2.360(F)|      SLOW  |    1.413(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<12>   |    2.714(F)|      SLOW  |    0.925(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<13>   |    2.595(F)|      SLOW  |    1.190(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<14>   |    2.478(F)|      SLOW  |    1.845(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<15>   |    2.334(F)|      SLOW  |    1.134(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<16>   |    2.104(F)|      SLOW  |    1.441(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<17>   |    1.915(F)|      SLOW  |    2.251(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<18>   |    2.081(F)|      SLOW  |    1.355(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<19>   |    1.778(F)|      SLOW  |    1.877(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<20>   |    2.792(F)|      SLOW  |    1.230(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<21>   |    1.865(F)|      SLOW  |    1.667(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<22>   |    1.866(F)|      SLOW  |    1.236(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<23>   |    2.243(F)|      SLOW  |    1.377(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<24>   |    2.038(F)|      SLOW  |    0.892(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<25>   |    2.212(F)|      SLOW  |    0.917(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<26>   |    1.770(F)|      SLOW  |    1.296(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<27>   |    1.139(F)|      SLOW  |    1.589(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<28>   |    0.812(F)|      SLOW  |    2.207(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<29>   |    1.623(F)|      SLOW  |    1.165(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<30>   |    1.343(F)|      SLOW  |    1.357(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<31>   |    1.097(F)|      SLOW  |    1.594(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<0>    |    3.894(F)|      SLOW  |    0.005(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<1>    |    2.847(F)|      SLOW  |    0.940(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<2>    |    4.025(F)|      SLOW  |    0.224(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<3>    |    3.662(F)|      SLOW  |    0.355(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<4>    |    3.672(F)|      SLOW  |    0.180(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<5>    |    3.938(F)|      SLOW  |    0.105(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<6>    |    3.696(F)|      SLOW  |    0.301(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<7>    |    2.161(F)|      SLOW  |    1.372(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<8>    |    3.288(F)|      SLOW  |    0.676(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<9>    |    3.028(F)|      SLOW  |    0.991(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<10>   |    2.847(F)|      SLOW  |    0.786(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<11>   |    2.492(F)|      SLOW  |    1.161(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<12>   |    2.958(F)|      SLOW  |    1.216(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<13>   |    2.828(F)|      SLOW  |    0.937(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<14>   |    3.044(F)|      SLOW  |    1.214(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<15>   |    2.522(F)|      SLOW  |    1.169(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<16>   |    3.846(F)|      SLOW  |    0.566(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<17>   |    2.514(F)|      SLOW  |    1.526(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<18>   |    2.873(F)|      SLOW  |    1.049(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<19>   |    2.316(F)|      SLOW  |    1.555(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<20>   |    3.611(F)|      SLOW  |    0.198(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<21>   |    2.707(F)|      SLOW  |    0.947(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<22>   |    2.757(F)|      SLOW  |    0.458(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<23>   |    2.057(F)|      SLOW  |    1.441(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<24>   |    3.531(F)|      SLOW  |    0.068(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<25>   |    2.588(F)|      SLOW  |    0.723(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<26>   |    2.719(F)|      SLOW  |    0.411(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<27>   |    2.213(F)|      SLOW  |    0.531(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<28>   |    2.191(F)|      SLOW  |    1.378(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<29>   |    2.102(F)|      SLOW  |    0.603(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<30>   |    1.997(F)|      SLOW  |    0.704(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<31>   |    1.695(F)|      SLOW  |    0.704(F)|      SLOW  |_n0086_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock alu_op<2>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+alu_a<0>    |    4.344(F)|      SLOW  |   -0.507(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<1>    |    4.996(F)|      SLOW  |   -0.572(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<2>    |    4.287(F)|      SLOW  |   -0.374(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<3>    |    4.331(F)|      SLOW  |    0.353(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<4>    |    4.565(F)|      SLOW  |   -0.728(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<5>    |    4.847(F)|      SLOW  |   -0.477(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<6>    |    3.227(F)|      SLOW  |    0.507(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<7>    |    3.382(F)|      SLOW  |    0.284(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<8>    |    2.951(F)|      SLOW  |    0.644(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<9>    |    3.685(F)|      SLOW  |    0.156(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<10>   |    2.764(F)|      SLOW  |    0.900(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<11>   |    2.521(F)|      SLOW  |    1.239(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<12>   |    2.875(F)|      SLOW  |    0.751(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<13>   |    2.756(F)|      SLOW  |    1.016(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<14>   |    2.639(F)|      SLOW  |    1.671(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<15>   |    2.495(F)|      SLOW  |    0.960(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<16>   |    2.265(F)|      SLOW  |    1.267(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<17>   |    2.076(F)|      SLOW  |    2.077(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<18>   |    2.242(F)|      SLOW  |    1.181(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<19>   |    1.939(F)|      SLOW  |    1.703(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<20>   |    2.953(F)|      SLOW  |    1.056(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<21>   |    2.026(F)|      SLOW  |    1.493(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<22>   |    2.027(F)|      SLOW  |    1.062(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<23>   |    2.404(F)|      SLOW  |    1.203(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<24>   |    2.199(F)|      SLOW  |    0.718(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<25>   |    2.373(F)|      SLOW  |    0.743(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<26>   |    1.931(F)|      SLOW  |    1.122(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<27>   |    1.300(F)|      SLOW  |    1.415(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<28>   |    0.973(F)|      SLOW  |    2.033(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<29>   |    1.784(F)|      SLOW  |    0.991(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<30>   |    1.504(F)|      SLOW  |    1.183(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<31>   |    1.258(F)|      SLOW  |    1.420(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<0>    |    4.055(F)|      SLOW  |   -0.169(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<1>    |    3.008(F)|      SLOW  |    0.766(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<2>    |    4.186(F)|      SLOW  |    0.050(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<3>    |    3.823(F)|      SLOW  |    0.181(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<4>    |    3.833(F)|      SLOW  |    0.006(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<5>    |    4.099(F)|      SLOW  |   -0.069(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<6>    |    3.857(F)|      SLOW  |    0.127(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<7>    |    2.322(F)|      SLOW  |    1.198(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<8>    |    3.449(F)|      SLOW  |    0.502(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<9>    |    3.189(F)|      SLOW  |    0.817(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<10>   |    3.008(F)|      SLOW  |    0.612(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<11>   |    2.653(F)|      SLOW  |    0.987(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<12>   |    3.119(F)|      SLOW  |    1.042(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<13>   |    2.989(F)|      SLOW  |    0.763(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<14>   |    3.205(F)|      SLOW  |    1.040(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<15>   |    2.683(F)|      SLOW  |    0.995(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<16>   |    4.007(F)|      SLOW  |    0.392(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<17>   |    2.675(F)|      SLOW  |    1.352(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<18>   |    3.034(F)|      SLOW  |    0.875(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<19>   |    2.477(F)|      SLOW  |    1.381(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<20>   |    3.772(F)|      SLOW  |    0.024(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<21>   |    2.868(F)|      SLOW  |    0.773(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<22>   |    2.918(F)|      SLOW  |    0.284(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<23>   |    2.218(F)|      SLOW  |    1.267(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<24>   |    3.692(F)|      SLOW  |   -0.106(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<25>   |    2.749(F)|      SLOW  |    0.549(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<26>   |    2.880(F)|      SLOW  |    0.237(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<27>   |    2.374(F)|      SLOW  |    0.357(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<28>   |    2.352(F)|      SLOW  |    1.204(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<29>   |    2.263(F)|      SLOW  |    0.429(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<30>   |    2.158(F)|      SLOW  |    0.530(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<31>   |    1.856(F)|      SLOW  |    0.530(F)|      SLOW  |_n0086_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock alu_op<3>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+alu_a<0>    |    4.986(F)|      SLOW  |   -1.030(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<1>    |    5.638(F)|      SLOW  |   -1.058(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<2>    |    4.929(F)|      SLOW  |   -0.952(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<3>    |    4.973(F)|      SLOW  |   -0.319(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<4>    |    5.207(F)|      SLOW  |   -1.207(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<5>    |    5.489(F)|      SLOW  |   -1.127(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<6>    |    3.869(F)|      SLOW  |   -0.165(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<7>    |    4.024(F)|      SLOW  |   -0.388(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<8>    |    3.593(F)|      SLOW  |   -0.028(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<9>    |    4.327(F)|      SLOW  |   -0.516(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<10>   |    3.406(F)|      SLOW  |    0.228(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<11>   |    3.163(F)|      SLOW  |    0.567(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<12>   |    3.517(F)|      SLOW  |    0.079(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<13>   |    3.398(F)|      SLOW  |    0.344(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<14>   |    3.281(F)|      SLOW  |    0.999(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<15>   |    3.137(F)|      SLOW  |    0.288(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<16>   |    2.907(F)|      SLOW  |    0.595(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<17>   |    2.718(F)|      SLOW  |    1.405(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<18>   |    2.884(F)|      SLOW  |    0.509(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<19>   |    2.581(F)|      SLOW  |    1.031(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<20>   |    3.595(F)|      SLOW  |    0.384(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<21>   |    2.668(F)|      SLOW  |    0.821(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<22>   |    2.669(F)|      SLOW  |    0.390(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<23>   |    3.046(F)|      SLOW  |    0.531(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<24>   |    2.841(F)|      SLOW  |    0.046(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<25>   |    3.015(F)|      SLOW  |    0.071(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<26>   |    2.573(F)|      SLOW  |    0.450(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<27>   |    1.942(F)|      SLOW  |    0.743(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<28>   |    1.615(F)|      SLOW  |    1.361(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<29>   |    2.426(F)|      SLOW  |    0.319(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<30>   |    2.146(F)|      SLOW  |    0.511(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<31>   |    1.900(F)|      SLOW  |    0.748(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<0>    |    4.697(F)|      SLOW  |   -0.774(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_b<1>    |    3.650(F)|      SLOW  |    0.094(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<2>    |    4.828(F)|      SLOW  |   -0.622(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<3>    |    4.465(F)|      SLOW  |   -0.491(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<4>    |    4.475(F)|      SLOW  |   -0.666(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<5>    |    4.741(F)|      SLOW  |   -0.739(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_b<6>    |    4.499(F)|      SLOW  |   -0.545(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<7>    |    2.964(F)|      SLOW  |    0.526(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<8>    |    4.091(F)|      SLOW  |   -0.170(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<9>    |    3.831(F)|      SLOW  |    0.145(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<10>   |    3.650(F)|      SLOW  |   -0.060(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<11>   |    3.295(F)|      SLOW  |    0.315(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<12>   |    3.761(F)|      SLOW  |    0.370(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<13>   |    3.631(F)|      SLOW  |    0.091(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<14>   |    3.847(F)|      SLOW  |    0.368(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<15>   |    3.325(F)|      SLOW  |    0.323(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<16>   |    4.649(F)|      SLOW  |   -0.280(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<17>   |    3.317(F)|      SLOW  |    0.680(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<18>   |    3.676(F)|      SLOW  |    0.203(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<19>   |    3.119(F)|      SLOW  |    0.709(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<20>   |    4.414(F)|      SLOW  |   -0.648(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<21>   |    3.510(F)|      SLOW  |    0.101(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<22>   |    3.560(F)|      SLOW  |   -0.388(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<23>   |    2.860(F)|      SLOW  |    0.595(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<24>   |    4.334(F)|      SLOW  |   -0.778(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<25>   |    3.391(F)|      SLOW  |   -0.123(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<26>   |    3.522(F)|      SLOW  |   -0.435(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<27>   |    3.016(F)|      SLOW  |   -0.315(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<28>   |    2.994(F)|      SLOW  |    0.532(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<29>   |    2.905(F)|      SLOW  |   -0.243(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<30>   |    2.800(F)|      SLOW  |   -0.142(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<31>   |    2.498(F)|      SLOW  |   -0.142(F)|      SLOW  |_n0086_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock alu_op<4>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+alu_a<0>    |    4.834(F)|      SLOW  |   -0.900(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<1>    |    5.486(F)|      SLOW  |   -0.928(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<2>    |    4.777(F)|      SLOW  |   -0.822(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<3>    |    4.821(F)|      SLOW  |   -0.169(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<4>    |    5.055(F)|      SLOW  |   -1.077(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<5>    |    5.337(F)|      SLOW  |   -0.997(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_a<6>    |    3.717(F)|      SLOW  |   -0.015(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<7>    |    3.872(F)|      SLOW  |   -0.238(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<8>    |    3.441(F)|      SLOW  |    0.122(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<9>    |    4.175(F)|      SLOW  |   -0.366(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<10>   |    3.254(F)|      SLOW  |    0.378(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<11>   |    3.011(F)|      SLOW  |    0.717(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<12>   |    3.365(F)|      SLOW  |    0.229(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<13>   |    3.246(F)|      SLOW  |    0.494(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<14>   |    3.129(F)|      SLOW  |    1.149(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<15>   |    2.985(F)|      SLOW  |    0.438(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<16>   |    2.755(F)|      SLOW  |    0.745(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<17>   |    2.566(F)|      SLOW  |    1.555(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<18>   |    2.732(F)|      SLOW  |    0.659(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<19>   |    2.429(F)|      SLOW  |    1.181(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<20>   |    3.443(F)|      SLOW  |    0.534(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<21>   |    2.516(F)|      SLOW  |    0.971(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<22>   |    2.517(F)|      SLOW  |    0.540(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<23>   |    2.894(F)|      SLOW  |    0.681(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<24>   |    2.689(F)|      SLOW  |    0.196(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<25>   |    2.863(F)|      SLOW  |    0.221(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<26>   |    2.421(F)|      SLOW  |    0.600(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<27>   |    1.790(F)|      SLOW  |    0.893(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<28>   |    1.463(F)|      SLOW  |    1.511(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<29>   |    2.274(F)|      SLOW  |    0.469(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<30>   |    1.994(F)|      SLOW  |    0.661(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_a<31>   |    1.748(F)|      SLOW  |    0.898(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<0>    |    4.545(F)|      SLOW  |   -0.644(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_b<1>    |    3.498(F)|      SLOW  |    0.244(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<2>    |    4.676(F)|      SLOW  |   -0.472(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<3>    |    4.313(F)|      SLOW  |   -0.341(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<4>    |    4.323(F)|      SLOW  |   -0.516(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<5>    |    4.589(F)|      SLOW  |   -0.591(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<6>    |    4.347(F)|      SLOW  |   -0.395(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<7>    |    2.812(F)|      SLOW  |    0.676(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<8>    |    3.939(F)|      SLOW  |   -0.020(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<9>    |    3.679(F)|      SLOW  |    0.295(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<10>   |    3.498(F)|      SLOW  |    0.090(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<11>   |    3.143(F)|      SLOW  |    0.465(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<12>   |    3.609(F)|      SLOW  |    0.520(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<13>   |    3.479(F)|      SLOW  |    0.241(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<14>   |    3.695(F)|      SLOW  |    0.518(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<15>   |    3.173(F)|      SLOW  |    0.473(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<16>   |    4.497(F)|      SLOW  |   -0.130(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<17>   |    3.165(F)|      SLOW  |    0.830(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<18>   |    3.524(F)|      SLOW  |    0.353(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<19>   |    2.967(F)|      SLOW  |    0.859(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<20>   |    4.262(F)|      SLOW  |   -0.498(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<21>   |    3.358(F)|      SLOW  |    0.251(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<22>   |    3.408(F)|      SLOW  |   -0.238(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<23>   |    2.708(F)|      SLOW  |    0.745(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<24>   |    4.182(F)|      SLOW  |   -0.628(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<25>   |    3.239(F)|      SLOW  |    0.027(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<26>   |    3.370(F)|      SLOW  |   -0.285(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<27>   |    2.864(F)|      SLOW  |   -0.165(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<28>   |    2.842(F)|      SLOW  |    0.682(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<29>   |    2.753(F)|      SLOW  |   -0.093(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<30>   |    2.648(F)|      SLOW  |    0.008(F)|      SLOW  |_n0086_BUFG       |   0.000|
+alu_b<31>   |    2.346(F)|      SLOW  |    0.008(F)|      SLOW  |_n0086_BUFG       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock alu_op<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_out<0>  |        12.278(F)|      SLOW  |         6.164(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<1>  |        12.281(F)|      SLOW  |         6.167(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<2>  |        12.281(F)|      SLOW  |         6.167(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<3>  |        12.283(F)|      SLOW  |         6.169(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<4>  |        12.283(F)|      SLOW  |         6.169(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<5>  |        12.286(F)|      SLOW  |         6.172(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<6>  |        12.286(F)|      SLOW  |         6.172(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<7>  |        12.278(F)|      SLOW  |         6.164(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<8>  |        12.278(F)|      SLOW  |         6.164(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<9>  |        12.281(F)|      SLOW  |         6.167(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<10> |        12.281(F)|      SLOW  |         6.167(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<11> |        12.284(F)|      SLOW  |         6.170(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<12> |        12.284(F)|      SLOW  |         6.170(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<13> |        12.287(F)|      SLOW  |         6.173(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<14> |        12.287(F)|      SLOW  |         6.173(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<15> |        12.289(F)|      SLOW  |         6.175(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<16> |        12.289(F)|      SLOW  |         6.175(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<17> |        12.291(F)|      SLOW  |         6.177(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<18> |        12.291(F)|      SLOW  |         6.177(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<19> |        12.293(F)|      SLOW  |         6.179(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<20> |        12.293(F)|      SLOW  |         6.179(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<21> |        12.284(F)|      SLOW  |         6.170(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<22> |        12.278(F)|      SLOW  |         6.164(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<23> |        12.291(F)|      SLOW  |         6.177(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<24> |        12.286(F)|      SLOW  |         6.172(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<25> |        12.292(F)|      SLOW  |         6.178(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<26> |        12.284(F)|      SLOW  |         6.170(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<27> |        12.291(F)|      SLOW  |         6.177(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<28> |        12.292(F)|      SLOW  |         6.178(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<29> |        12.278(F)|      SLOW  |         6.164(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<30> |        12.286(F)|      SLOW  |         6.172(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<31> |        12.290(F)|      SLOW  |         6.176(F)|      FAST  |_n0086_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock alu_op<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_out<0>  |        12.510(F)|      SLOW  |         6.382(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<1>  |        12.513(F)|      SLOW  |         6.385(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<2>  |        12.513(F)|      SLOW  |         6.385(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<3>  |        12.515(F)|      SLOW  |         6.387(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<4>  |        12.515(F)|      SLOW  |         6.387(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<5>  |        12.518(F)|      SLOW  |         6.390(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<6>  |        12.518(F)|      SLOW  |         6.390(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<7>  |        12.510(F)|      SLOW  |         6.382(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<8>  |        12.510(F)|      SLOW  |         6.382(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<9>  |        12.513(F)|      SLOW  |         6.385(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<10> |        12.513(F)|      SLOW  |         6.385(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<11> |        12.516(F)|      SLOW  |         6.388(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<12> |        12.516(F)|      SLOW  |         6.388(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<13> |        12.519(F)|      SLOW  |         6.391(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<14> |        12.519(F)|      SLOW  |         6.391(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<15> |        12.521(F)|      SLOW  |         6.393(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<16> |        12.521(F)|      SLOW  |         6.393(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<17> |        12.523(F)|      SLOW  |         6.395(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<18> |        12.523(F)|      SLOW  |         6.395(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<19> |        12.525(F)|      SLOW  |         6.397(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<20> |        12.525(F)|      SLOW  |         6.397(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<21> |        12.516(F)|      SLOW  |         6.388(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<22> |        12.510(F)|      SLOW  |         6.382(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<23> |        12.523(F)|      SLOW  |         6.395(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<24> |        12.518(F)|      SLOW  |         6.390(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<25> |        12.524(F)|      SLOW  |         6.396(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<26> |        12.516(F)|      SLOW  |         6.388(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<27> |        12.523(F)|      SLOW  |         6.395(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<28> |        12.524(F)|      SLOW  |         6.396(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<29> |        12.510(F)|      SLOW  |         6.382(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<30> |        12.518(F)|      SLOW  |         6.390(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<31> |        12.522(F)|      SLOW  |         6.394(F)|      FAST  |_n0086_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock alu_op<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_out<0>  |        12.336(F)|      SLOW  |         6.311(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<1>  |        12.339(F)|      SLOW  |         6.314(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<2>  |        12.339(F)|      SLOW  |         6.314(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<3>  |        12.341(F)|      SLOW  |         6.316(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<4>  |        12.341(F)|      SLOW  |         6.316(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<5>  |        12.344(F)|      SLOW  |         6.319(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<6>  |        12.344(F)|      SLOW  |         6.319(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<7>  |        12.336(F)|      SLOW  |         6.311(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<8>  |        12.336(F)|      SLOW  |         6.311(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<9>  |        12.339(F)|      SLOW  |         6.314(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<10> |        12.339(F)|      SLOW  |         6.314(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<11> |        12.342(F)|      SLOW  |         6.317(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<12> |        12.342(F)|      SLOW  |         6.317(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<13> |        12.345(F)|      SLOW  |         6.320(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<14> |        12.345(F)|      SLOW  |         6.320(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<15> |        12.347(F)|      SLOW  |         6.322(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<16> |        12.347(F)|      SLOW  |         6.322(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<17> |        12.349(F)|      SLOW  |         6.324(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<18> |        12.349(F)|      SLOW  |         6.324(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<19> |        12.351(F)|      SLOW  |         6.326(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<20> |        12.351(F)|      SLOW  |         6.326(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<21> |        12.342(F)|      SLOW  |         6.317(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<22> |        12.336(F)|      SLOW  |         6.311(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<23> |        12.349(F)|      SLOW  |         6.324(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<24> |        12.344(F)|      SLOW  |         6.319(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<25> |        12.350(F)|      SLOW  |         6.325(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<26> |        12.342(F)|      SLOW  |         6.317(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<27> |        12.349(F)|      SLOW  |         6.324(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<28> |        12.350(F)|      SLOW  |         6.325(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<29> |        12.336(F)|      SLOW  |         6.311(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<30> |        12.344(F)|      SLOW  |         6.319(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<31> |        12.348(F)|      SLOW  |         6.323(F)|      FAST  |_n0086_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock alu_op<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_out<0>  |        11.664(F)|      SLOW  |         5.851(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<1>  |        11.667(F)|      SLOW  |         5.854(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<2>  |        11.667(F)|      SLOW  |         5.854(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<3>  |        11.669(F)|      SLOW  |         5.856(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<4>  |        11.669(F)|      SLOW  |         5.856(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<5>  |        11.672(F)|      SLOW  |         5.859(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<6>  |        11.672(F)|      SLOW  |         5.859(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<7>  |        11.664(F)|      SLOW  |         5.851(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<8>  |        11.664(F)|      SLOW  |         5.851(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<9>  |        11.667(F)|      SLOW  |         5.854(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<10> |        11.667(F)|      SLOW  |         5.854(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<11> |        11.670(F)|      SLOW  |         5.857(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<12> |        11.670(F)|      SLOW  |         5.857(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<13> |        11.673(F)|      SLOW  |         5.860(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<14> |        11.673(F)|      SLOW  |         5.860(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<15> |        11.675(F)|      SLOW  |         5.862(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<16> |        11.675(F)|      SLOW  |         5.862(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<17> |        11.677(F)|      SLOW  |         5.864(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<18> |        11.677(F)|      SLOW  |         5.864(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<19> |        11.679(F)|      SLOW  |         5.866(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<20> |        11.679(F)|      SLOW  |         5.866(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<21> |        11.670(F)|      SLOW  |         5.857(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<22> |        11.664(F)|      SLOW  |         5.851(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<23> |        11.677(F)|      SLOW  |         5.864(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<24> |        11.672(F)|      SLOW  |         5.859(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<25> |        11.678(F)|      SLOW  |         5.865(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<26> |        11.670(F)|      SLOW  |         5.857(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<27> |        11.677(F)|      SLOW  |         5.864(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<28> |        11.678(F)|      SLOW  |         5.865(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<29> |        11.664(F)|      SLOW  |         5.851(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<30> |        11.672(F)|      SLOW  |         5.859(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<31> |        11.676(F)|      SLOW  |         5.863(F)|      FAST  |_n0086_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock alu_op<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_out<0>  |        11.814(F)|      SLOW  |         5.984(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<1>  |        11.817(F)|      SLOW  |         5.987(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<2>  |        11.817(F)|      SLOW  |         5.987(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<3>  |        11.819(F)|      SLOW  |         5.989(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<4>  |        11.819(F)|      SLOW  |         5.989(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<5>  |        11.822(F)|      SLOW  |         5.992(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<6>  |        11.822(F)|      SLOW  |         5.992(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<7>  |        11.814(F)|      SLOW  |         5.984(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<8>  |        11.814(F)|      SLOW  |         5.984(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<9>  |        11.817(F)|      SLOW  |         5.987(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<10> |        11.817(F)|      SLOW  |         5.987(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<11> |        11.820(F)|      SLOW  |         5.990(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<12> |        11.820(F)|      SLOW  |         5.990(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<13> |        11.823(F)|      SLOW  |         5.993(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<14> |        11.823(F)|      SLOW  |         5.993(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<15> |        11.825(F)|      SLOW  |         5.995(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<16> |        11.825(F)|      SLOW  |         5.995(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<17> |        11.827(F)|      SLOW  |         5.997(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<18> |        11.827(F)|      SLOW  |         5.997(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<19> |        11.829(F)|      SLOW  |         5.999(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<20> |        11.829(F)|      SLOW  |         5.999(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<21> |        11.820(F)|      SLOW  |         5.990(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<22> |        11.814(F)|      SLOW  |         5.984(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<23> |        11.827(F)|      SLOW  |         5.997(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<24> |        11.822(F)|      SLOW  |         5.992(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<25> |        11.828(F)|      SLOW  |         5.998(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<26> |        11.820(F)|      SLOW  |         5.990(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<27> |        11.827(F)|      SLOW  |         5.997(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<28> |        11.828(F)|      SLOW  |         5.998(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<29> |        11.814(F)|      SLOW  |         5.984(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<30> |        11.822(F)|      SLOW  |         5.992(F)|      FAST  |_n0086_BUFG       |   0.000|
+alu_out<31> |        11.826(F)|      SLOW  |         5.996(F)|      FAST  |_n0086_BUFG       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock alu_op<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+alu_op<0>      |         |         |    3.540|    3.540|
+alu_op<1>      |         |         |    3.163|    3.163|
+alu_op<2>      |         |         |    3.214|    3.214|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock alu_op<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+alu_op<0>      |         |         |    3.321|    3.321|
+alu_op<1>      |         |         |    2.944|    2.944|
+alu_op<2>      |         |         |    2.995|    2.995|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock alu_op<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+alu_op<0>      |         |         |    3.482|    3.482|
+alu_op<1>      |         |         |    3.105|    3.105|
+alu_op<2>      |         |         |    3.156|    3.156|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock alu_op<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+alu_op<0>      |         |         |    4.124|    4.124|
+alu_op<1>      |         |         |    3.747|    3.747|
+alu_op<2>      |         |         |    3.798|    3.798|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock alu_op<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+alu_op<0>      |         |         |    3.972|    3.972|
+alu_op<1>      |         |         |    3.595|    3.595|
+alu_op<2>      |         |         |    3.646|    3.646|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Apr 04 20:15:24 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 139 MB
+
+
+
